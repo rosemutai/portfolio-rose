@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+.hero-section {
+  border-bottom-left-radius: 6rem;
+}
+
+.about-me {
+  border-top-right-radius: 6rem;
+}
+
+.footer {
+  border-top-left-radius: 6rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  transition: all 0.03s;
+}
+
+.btn:active {
+  background: #2230d2;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.03s;
+}
+
+.btn:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+  transition: all 0.03s;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.frontend {
+  position: absolute;
+}
+
+.frontend:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #7F8CFF;
+}
+
+.frontend:nth-child(2) {
+  color: #7F8CFF;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-link::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background: #344563;
+    transition: width .3s;
+  }
+
+.menu-link:hover::after {
+    width: 100%;
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.icon:hover {
+    background-color: #7F8CFF;
+    color: #EBEBFF;
+    margin-top: 12px;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+  transition: color 2s ease-in;
+
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 
+      0 0 5px #7F8CFF,
+      0 0 5px #7F8CFF, 
+      0 0 10px #7F8CFF, 
+      0 0 10px #7F8CFF, 
+      0 0 15px #7F8CFF, 
+      0 0 15px #7F8CFF, 
+      0 0 15px #7F8CFF;
+  }
+  to {
+    box-shadow:
+      0 0 5px #7F8CFF, 
+      0 0 5px #7F8CFF, 
+      0 0 10px #7F8CFF, 
+      0 0 10px #7F8CFF, 
+      0 0 15px #7F8CFF, 
+      0 0 15px #505F79, 
+      0 0 15px #7F8CFF;
+  }
+}
