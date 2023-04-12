@@ -19,6 +19,10 @@
   border-bottom-left-radius: 6rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .about-me {
   border-top-right-radius: 6rem;
 }
