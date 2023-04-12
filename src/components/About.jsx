@@ -1,31 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown, faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import Accordion from './Accordion';
+import languages from './Languages';
+import frameworks from './Frameworks';
 
-import js from '../assets/javascript.svg';
-import html from '../assets/html.svg';
-import css from '../assets/css.svg';
-import { useState } from 'react';
 
-const skills = [
-  {
-    imageUrl: html,
-    name: 'HTML',
-    bgcolor: 'E34F26',
-  },
-
-  {
-    imageUrl: css,
-    name: 'CSS',
-    bgcolor: '0074D9',
-  },
-
-  {
-    imageUrl: js,
-    name: 'JavaSCript',
-    bgcolor: 'F7DF1E',
-  },
-]
 
 const About = () => {
 
@@ -73,35 +53,13 @@ const About = () => {
       >Get my resume</a>
       </div>
       <div className="second-colum pl-0 md:pl-8 md:w-1/2">
-        <div className="flex justify-between">
-          <h4 className='text-primary font-bold md:font-medium text-lg mb-3 mt-12 md:mt-0'>Languages</h4>
-          <FontAwesomeIcon icon={faChevronDown} className='text-[#ACB7C3] mt-12 block md:hidden' />
-        </div>
-        <div className="skills flex flex-col md:flex-row gap-3 mt-4 md:mt-0">
-          {skills.map((skill, index) => (
-            <div key={index} className="small-card bg-[#f7f7f9] w-full flex flex-row md:flex-col md:w-28 
-              items-center md:items-start h-20 md:h-28 rounded-md md:p-3">
-              {console.log `${skill.bgcolor}`}
-              <img src={skill.imageUrl} className={`w-12 h-12 rounded-[50%] object-cover bg-${skill.bgcolor}`} 
-                alt={skill.name} />
-              <p className='text-darkBlue font-medium mt-3 text-sm ml-3 md:ml-0'>{skill.name}</p>
-            </div>
-          ))}  
-        </div>
+        <Accordion title='Languages' content={languages} />
+        <Accordion title='Frameworks' content={frameworks} />
+        <hr className='hidden md:block border border-b-[#DFE1E6] border-t-0 border-x-0 my-4 '/>
 
-        <div className="frameworks-skills flex flex-col mt-11">
-          <div className="framework flex justify-between border 
-            border-b-[#DFE1E6] border-t-0 border-x-0 px-3">
-            <h4 className='text-primary font-medium text-lg mb-3'>Frameworks</h4>
-            <FontAwesomeIcon icon={faChevronRight} className='text-[#ACB7C3]' />
-          </div>
+        <Accordion title='Skills' content={frameworks} />
+        <hr className='hidden md:block border border-b-[#DFE1E6] border-t-0 border-x-0 my-4 '/>
 
-          <div className="skills flex justify-between mt-11 border 
-            border-b-[#DFE1E6] border-t-0 border-x-0 px-3">
-            <h4 className='text-primary font-medium text-lg mb-3'>Skills</h4>
-            <FontAwesomeIcon icon={faChevronRight} className='text-[#ACB7C3]' />
-          </div>
-        </div>
       </div>
     </section>
   )
