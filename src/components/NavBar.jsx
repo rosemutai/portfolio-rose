@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 const NavBar = () => {
 
   const [ isShowing, setIsShowing] = useState(false);
