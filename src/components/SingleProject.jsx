@@ -12,11 +12,14 @@ function SingleProject({ name, experience, description, featuredImage, technolog
     <div>
       <div className='project-card bg-white border-2 border-lightGrey rounded-md 6 mb-4 p-4 
         md:relative group hover:shadow-md hover:transition-all hover:duration-100 hover:ease-in-out'>
-        <img src={featuredImage} alt={name} className='mx-auto w-full group-hover:opacity-20 
-          group-hover:bg-lightBlue hover:transition-opacity hover:duration-200 hover:ease-in-out'
-        />
+          <div className="image-bg bg-lightBlue rounded-lg">
+             <img src={featuredImage} alt={name} className='project-image mx-auto w-full group-hover:opacity-20 
+              hover:transition-opacity hover:duration-200 hover:ease-in-out'
+            />
+          </div>
+       
          <h3 className='text-navyBlue font-bold text-xl mt-4 mb-0 md:mb-2'>{name}</h3>
-        <div className="tech flex my-2 md:absolute opacity-0 top-[50%] group-hover:opacity-100">
+        <div className="tech flex my-2 md:absolute z-30 opacity-0 top-[50%] group-hover:opacity-100">
           { techBtns }
         </div>
         <p className="description font-normal text-xs tracking-wide text-primary">{description}</p>
