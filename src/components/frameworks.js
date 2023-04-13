@@ -1,24 +1,31 @@
-import js from '../assets/javascript.svg';
-import html from '../assets/html.svg';
-import css from '../assets/css.svg';
+import node from '../assets/nodejs.svg';
+import react from '../assets/react.svg';
+import tailwind from '../assets/tailwindcss.svg';
+import next from '../assets/nextjs.svg';
 
 const frameworks = [
   {
-    imageUrl: html,
-    name: 'HTML',
-    style: 'shadow-E34F26',
+    imageUrl: react,
+    name: 'React',
+    style: 'shadow-blue-300',
   },
 
   {
-    imageUrl: css,
-    name: 'CSS',
-    style: 'shadow-0074D9',
+    imageUrl: node,
+    name: 'Nodejs',
+    style: 'shadow-lime-500',
   },
 
   {
-    imageUrl: js,
-    name: 'JavaSCript',
-    style: 'shadow-F7DF1E',
+    imageUrl: next,
+    name: 'Nextjs',
+    style: 'shadow-black',
+  },
+
+  {
+    imageUrl: tailwind,
+    name: 'Tailwind CSS',
+    style: 'shadow-blue-300',
   },
 ]
 
