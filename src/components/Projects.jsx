@@ -12,7 +12,6 @@ const Projects = () => {
       <div className="projects md:grid md:grid-cols-3 gap-4">
         {MyProjects.map((project, index) => (
           <div key={index}>
-            {console.log(project)}
             <SingleProject
               name = {project.name}
               featuredImage={project.featuredImage}
