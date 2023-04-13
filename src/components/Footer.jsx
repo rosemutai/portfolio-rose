@@ -37,7 +37,7 @@ const Footer = () => {
   }
 
   return (
-    <div className='footer w-full h-full text-white md:flex md:flex-col
+    <div id="contactMe" className='footer w-full h-full text-white md:flex md:flex-col
       md:items-center bg-contact-formbgmobile md:bg-contact-formbg pt-12
       bg-no-repeat bg-right md:bg-center bg-contain bg-[#6070FF]'>
 
