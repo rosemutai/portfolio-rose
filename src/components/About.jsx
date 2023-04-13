@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faChevronDown, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import Accordion from './Accordion';
 import languages from './Languages';
-import frameworks from './Frameworks';
+import frameworks from './frameworks';
 
 
 
