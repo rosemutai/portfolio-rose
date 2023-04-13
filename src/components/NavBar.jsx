@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
+import { Link, animateScroll as scroll } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,10 +30,44 @@ const NavBar = () => {
         </div>
 
         <ul className="hidden menu-links md:flex text-primary">
-          <li className="mr-8 text-lg"><a className="menu-link" href="#">Home</a></li>
-          <li className="mr-8 text-lg"><a className="menu-link" href="#">About</a></li>
-          <li className="mr-8 text-lg"><a className="menu-link" href="#">Portfolio</a></li>
-          <li className="mr-8 text-lg"><a className="menu-link" href="#">Contact</a></li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link"
+              to="/">Home
+            </Link>
+          </li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link" 
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >About
+            </Link>
+          </li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link" 
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Portfolio
+            </Link>
+          </li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link"
+              to="contactMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Contact</Link>
+          </li>
         </ul>
         <Transition 
           as="ul"
@@ -46,10 +81,44 @@ const NavBar = () => {
         >
           <ul className="md:hidden absolute top-0 left-0 z-20 menu-links flex flex-col h-screen w-[100vw] gap-y-16
             pl-12 mt-11 text-white bg-lightBlue">
-            <li className="mr-8 text-xl"><a className="menu-link" href="#">Home</a></li>
-            <li className="mr-8 text-xl"><a className="menu-link" href="#">About</a></li>
-            <li className="mr-8 text-xl"><a className="menu-link" href="#">Portfolio</a></li>
-            <li className="mr-8 text-xl"><a className="menu-link" href="#">Contact</a></li>
+            <li className="mr-8 text-lg">
+            <Link
+              className="menu-link"
+              to="/">Home
+            </Link>
+          </li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link" 
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >About
+            </Link>
+          </li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link" 
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Portfolio
+            </Link>
+          </li>
+          <li className="mr-8 text-lg">
+            <Link
+              className="menu-link"
+              to="contactMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Contact</Link>
+          </li>
           </ul>
         </Transition>
         
