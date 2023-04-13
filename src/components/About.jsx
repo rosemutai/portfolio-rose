@@ -10,7 +10,7 @@ import frameworks from './Frameworks';
 const About = () => {
 
   return (
-    <section className='about-me px-12 md:px-48 w-full h-scre py-24 mt-8 bg-white rounded-tr-[6rem] pt-6
+    <section id='aboutMe' className='about-me px-12 md:px-48 w-full h-scre py-24 mt-8 bg-white rounded-tr-[6rem] pt-6
       md:flex md:justify-between'>
       <div className="first-column md:w-1/2">
         <h2 className='text-navyBlue font-bold text-2xl'>About Myself</h2>
