@@ -7,6 +7,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 const NavBar = () => {
 
   const [ isShowing, setIsShowing] = useState(false);
+   const [ isBlurred, setIsBlurred] = useState(true);
 
   return (
     <div className="navbar w-full bg-white">
@@ -79,15 +80,16 @@ const NavBar = () => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
+          
           <ul className="md:hidden absolute top-0 left-0 z-20 menu-links flex flex-col h-screen w-[100vw] gap-y-16
-            pl-12 mt-11 text-white bg-lightBlue">
-            <li className="mr-8 text-lg">
+            pl-12 mt-11 text-white bg-lightBlue/80 backdrop-blur pt-16">
+            <li className="mr-8 text-xl">
             <Link
               className="menu-link"
               to="/">Home
             </Link>
           </li>
-          <li className="mr-8 text-lg">
+          <li className="mr-8 text-xl">
             <Link
               className="menu-link" 
               to="aboutMe"
@@ -98,7 +100,7 @@ const NavBar = () => {
             >About
             </Link>
           </li>
-          <li className="mr-8 text-lg">
+          <li className="mr-8 text-xl">
             <Link
               className="menu-link" 
               to="portfolio"
@@ -109,7 +111,7 @@ const NavBar = () => {
             >Portfolio
             </Link>
           </li>
-          <li className="mr-8 text-lg">
+          <li className="mr-8 text-xl">
             <Link
               className="menu-link"
               to="contactMe"
