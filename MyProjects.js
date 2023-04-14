@@ -1,65 +1,105 @@
+import zoezi from '../assets/fitness.png';
+import doktary from '../assets/onaDoc.png';
+import safiri from '../assets/safiriii.png';
+import CatWiki from '../assets/cat.png';
+import windbnb from '../assets/stays.png';
+import DevFinder from '../assets/devfinder.png';
+
 const MyProjects = [
+
   {
-    name: 'To-Do-List',
+    name: 'zoeziFitness',
     experience: {
       company: 'Microverse',
       role: 'Front End Dev',
       year: 2023,
     },
-    description: 'Add and remove your daily list of todo tasks here.',
-    featuredImage: './src/assets/SnapshootPortfolio.svg',
+    description: 'A gym web application',
+    featuredImage: zoezi,
     technologies: [
-      'html', 'css', 'javascript',
+      'Typescript', 'Tailwind CSS',
     ],
-    liveDemo: 'https://rosemutai.github.io/My-Portfolio/',
-    sourceCode: 'https://rosemutai.github.io/My-Portfolio/'
+    liveDemo: 'https://github.com/rosemutai/fitnessApp',
+    sourceCode: 'https://github.com/rosemutai/fitnessApp'
   },
 
   {
-    name: 'Multi-Post Stories',
+    name: 'Doktary',
+    experience: {
+      company: 'Microverse',
+      role: 'Front End Dev',
+      year: 2023,
+    },
+    description: 'A doctor booking appointment web application',
+    featuredImage: doktary,
+    technologies: [
+      'React', 'Tailwind CSS',
+    ],
+    liveDemo: 'https://onadoktary.netlify.app/',
+    sourceCode: 'https://github.com/rosemutai/doktary'
+  },
+
+  {
+    name: 'Safirii',
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
       year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './src/assets/SnapshootPortfolio1.svg',
+    description: 'A travelling experience web application',
+    featuredImage: safiri,
     technologies: [
-      'html', 'css', 'javascript',
+      'React', 'Tailwind CSS',
     ],
-    liveDemo: 'https://rosemutai.github.io/My-Portfolio/',
-    sourceCode: 'https://rosemutai.github.io/My-Portfolio/'
+    liveDemo: 'https://safiriapp.netlify.app/',
+    sourceCode: 'https://github.com/rosemutai/travelApp'
   },
 
   {
-    name: 'Facebook 360',
+    name: 'CatWiki',
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
       year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './src/assets/SnapshootPortfolio2.svg',
+    description: 'Get information about cats by consuming the ninjas cat API',
+    featuredImage: CatWiki,
     technologies: [
-      'html', 'css', 'javascript',
+      'Typescript', 'Tailwind CSS',
     ],
-    liveDemo: 'https://rosemutai.github.io/My-Portfolio/',
-    sourceCode: 'https://rosemutai.github.io/My-Portfolio/'
+    liveDemo: 'https://rosemutai.github.io/catWiki/',
+    sourceCode: 'https://github.com/rosemutai/catWiki'
   },
 
   {
-    name: 'Uber Navigation',
+    name: 'windbnb',
     experience: {
       company: 'canopy',
       role: 'Back End Dev',
       year: 2015,
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    featuredImage: './src/assets/SnapshootPortfolio3.svg',
+    description: 'Find any stayay in Finland by searching.',
+    featuredImage: windbnb,
     technologies: [
       'html', 'css', 'javascript',
     ],
-    liveDemo: 'https://rosemutai.github.io/My-Portfolio/',
+    liveDemo: 'https://github.com/rosemutai/windbnb',
+    sourceCode: 'https://github.com/rosemutai/windbnb'
+  },
+
+  {
+    name: 'DevFinder',
+    experience: {
+      company: 'canopy',
+      role: 'Back End Dev',
+      year: 2015,
+    },
+    description: 'Find any GitHub user by their username',
+    featuredImage: DevFinder,
+    technologies: [
+      'html', 'css', 'javascript',
+    ],
+    liveDemo: 'https://devfinder-508c9.web.app/',
     sourceCode: 'https://rosemutai.github.io/My-Portfolio/'
   },
 ];
