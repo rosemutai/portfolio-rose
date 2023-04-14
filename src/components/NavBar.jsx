@@ -33,13 +33,13 @@ const NavBar = () => {
         <ul className="hidden menu-links md:flex text-primary">
           <li className="mr-8 text-lg">
             <Link
-              className="menu-link"
+              className="menu-link cursor-pointer"
               to="/">Home
             </Link>
           </li>
           <li className="mr-8 text-lg">
             <Link
-              className="menu-link" 
+              className="menu-link cursor-pointer" 
               to="aboutMe"
               spy={true}
               smooth={true}
@@ -50,7 +50,7 @@ const NavBar = () => {
           </li>
           <li className="mr-8 text-lg">
             <Link
-              className="menu-link" 
+              className="menu-link cursor-pointer" 
               to="portfolio"
               spy={true}
               smooth={true}
@@ -58,10 +58,16 @@ const NavBar = () => {
               duration={500}
             >Portfolio
             </Link>
+          </li> <li className="mr-8 text-xl">
+            <a
+              className="menu-link cursor-pointer"
+              href="https://mutairose.hashnode.dev/"
+              target="_blank"
+            >Blog</a>
           </li>
           <li className="mr-8 text-lg">
             <Link
-              className="menu-link"
+              className="menu-link cursor-pointer"
               to="contactMe"
               spy={true}
               smooth={true}
@@ -85,13 +91,13 @@ const NavBar = () => {
             pl-12 mt-11 text-white bg-lightBlue/80 backdrop-blur pt-16">
             <li className="mr-8 text-xl">
             <Link
-              className="menu-link"
+              className="menu-link cursor-pointer"
               to="/">Home
             </Link>
           </li>
           <li className="mr-8 text-xl">
             <Link
-              className="menu-link" 
+              className="menu-link cursor-pointer" 
               to="aboutMe"
               spy={true}
               smooth={true}
@@ -100,7 +106,7 @@ const NavBar = () => {
             >About
             </Link>
           </li>
-          <li className="mr-8 text-xl">
+          <li className="mr-8 text-xl cursor-pointer">
             <Link
               className="menu-link" 
               to="portfolio"
@@ -111,9 +117,18 @@ const NavBar = () => {
             >Portfolio
             </Link>
           </li>
+
+          <li className="mr-8 text-xl">
+            <a
+              className="menu-link cursor-pointer"
+              href="https://mutairose.hashnode.dev/"
+              target="_blank"
+            >Blog</a>
+          </li>
+
           <li className="mr-8 text-xl">
             <Link
-              className="menu-link"
+              className="menu-link cursor-pointer"
               to="contactMe"
               spy={true}
               smooth={true}
