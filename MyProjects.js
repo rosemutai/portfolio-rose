@@ -1,9 +1,9 @@
-import zoezi from '../assets/fitness.png';
-import doktary from '../assets/onaDoc.png';
-import safiri from '../assets/safiriii.png';
-import CatWiki from '../assets/cat.png';
-import windbnb from '../assets/stays.png';
-import DevFinder from '../assets/devfinder.png';
+import zoezi from './src/assets/fitness.png';
+import doktary from './src/assets/onaDoc.png';
+import safiri from './src/assets/safiriii.png';
+import CatWiki from './src/assets/cat.png';
+import windbnb from './src/assets/stays.png';
+import DevFinder from './src/assets/devfinder.png';
 
 const MyProjects = [
 
