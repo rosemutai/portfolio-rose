@@ -19,7 +19,7 @@ const MyProjects = [
     technologies: [
       'Typescript', 'Tailwind CSS',
     ],
-    liveDemo: 'https://github.com/rosemutai/fitnessApp',
+    liveDemo: 'https://zoezifitness-e2deb.web.app/',
     sourceCode: 'https://github.com/rosemutai/fitnessApp'
   },
 
@@ -83,7 +83,7 @@ const MyProjects = [
     technologies: [
       'html', 'css', 'javascript',
     ],
-    liveDemo: 'https://github.com/rosemutai/windbnb',
+    liveDemo: 'https://rosemutai.github.io/windbnb/',
     sourceCode: 'https://github.com/rosemutai/windbnb'
   },
 
