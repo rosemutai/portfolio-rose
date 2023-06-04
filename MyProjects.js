@@ -4,8 +4,42 @@ import safiri from './src/assets/safiriii.png';
 import CatWiki from './src/assets/cat.png';
 import windbnb from './src/assets/stays.png';
 import DevFinder from './src/assets/devfinder.png';
+import gymit from './src/assets/gymit.png';
+import crappo from './src/assets/crappo.png';
 
 const MyProjects = [
+
+  {
+    name: 'gymIt',
+    experience: {
+      company: 'Freelance',
+      role: 'Front End Dev',
+      year: 2023,
+    },
+    description: 'A gym web application',
+    featuredImage: gymit,
+    technologies: [
+      'Nextjs', 'Typescript', 'Tailwind CSS',
+    ],
+    liveDemo: 'https://gymit.vercel.app/',
+    sourceCode: 'https://github.com/rosemutai/gymIt'
+  },
+
+  {
+    name: 'CRAPPO',
+    experience: {
+      company: 'Freelance',
+      role: 'Front End Dev',
+      year: 2023,
+    },
+    description: 'A Crypto Web App',
+    featuredImage: crappo,
+    technologies: [
+      'React', 'Tailwind CSS',
+    ],
+    liveDemo: 'https://crappo-osb6vn8gm-rosemutai.vercel.app/',
+    sourceCode: 'https://github.com/rosemutai/crappo'
+  },
 
   {
     name: 'zoeziFitness',
