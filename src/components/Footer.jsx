@@ -63,7 +63,7 @@ const Footer = () => {
             {...register("fullname", { required: true})}
             disabled={isSubmitting}
             id="fullname"
-            placeholder='Jane Doe'
+            placeholder='Your Name'
             className='w-full p-3 mb-6 rounded-md md:rounded-[2px] placeholder:text-[#B3BAC5] 
               placeholder:text-base focus:outline-none text-primary focus:shadow-md focus:shadow-primary'
             value={fullname}
@@ -79,7 +79,7 @@ const Footer = () => {
             {...register("email", { required: true})}
             disabled={isSubmitting}
             id="email" 
-            placeholder='janedoe@gmail.com' 
+            placeholder='youremail@gmail.com' 
             className='w-full p-3 mb-6 rounded-md md:rounded-[2px] placeholder:text-[#B3BAC5]
               placeholder:text-base focus:outline-none text-primary focus:shadow-md focus:shadow-primary'
             value={email}
