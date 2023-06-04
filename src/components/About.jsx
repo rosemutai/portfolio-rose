@@ -3,6 +3,8 @@ import { faTwitter, faGithub, faInstagram, faLinkedinIn } from '@fortawesome/fre
 import Accordion from './Accordion';
 import languages from './Languages';
 import frameworks from './frameworks';
+import skills from "./Skills";
+
 
 
 
@@ -56,7 +58,7 @@ const About = () => {
         <Accordion title='Frameworks' content={frameworks} />
         <hr className='hidden md:block border border-b-[#DFE1E6] border-t-0 border-x-0 my-4 '/>
 
-        <Accordion title='Skills' content={frameworks} />
+        <Accordion title='Skills' content={skills} />
         <hr className='hidden md:block border border-b-[#DFE1E6] border-t-0 border-x-0 my-4 '/>
 
       </div>
