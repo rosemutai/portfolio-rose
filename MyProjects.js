@@ -6,8 +6,28 @@ import windbnb from './src/assets/stays.png';
 import DevFinder from './src/assets/devfinder.png';
 import gymit from './src/assets/gymit.png';
 import crappo from './src/assets/crappo.png';
+import kiosk from './src/assets/kiosk.png';
+import maliEstates from './src/assets/maliestates.png';
+
+
 
 const MyProjects = [
+
+  {
+    name: 'kioskCompass',
+    experience: {
+      company: 'Freelance',
+      role: 'Front End Dev',
+      year: 2023,
+    },
+    description: "KioskCompass App's website",
+    featuredImage: kiosk,
+    technologies: [
+      'HTML', 'Tailwind CSS', 'JavaScript',
+    ],
+    liveDemo: 'https://kioskcompass.com/',
+    sourceCode: '#'
+  },
 
   {
     name: 'maliEstates',
@@ -17,7 +37,7 @@ const MyProjects = [
       year: 2023,
     },
     description: 'A property listing applications',
-    featuredImage: gymit,
+    featuredImage: maliEstates,
     technologies: [
       'Nextjs', 'Tailwind CSS', 'Supabase',
     ],
