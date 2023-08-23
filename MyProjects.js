@@ -10,6 +10,22 @@ import crappo from './src/assets/crappo.png';
 const MyProjects = [
 
   {
+    name: 'maliEstates',
+    experience: {
+      company: 'Freelance',
+      role: 'Front End Dev',
+      year: 2023,
+    },
+    description: 'A property listing applications',
+    featuredImage: gymit,
+    technologies: [
+      'Nextjs', 'Tailwind CSS', 'Supabase',
+    ],
+    liveDemo: 'https://mali-estates-fg5c6gf1o-rosemutai.vercel.app/',
+    sourceCode: 'https://github.com/rosemutai/maliEstates'
+  },
+
+  {
     name: 'gymIt',
     experience: {
       company: 'Freelance',
