@@ -8,10 +8,25 @@ import gymit from './src/assets/gymit.png';
 import crappo from './src/assets/crappo.png';
 import kiosk from './src/assets/kiosk.png';
 import maliEstates from './src/assets/maliestates.png';
-
-
+import taskManager from './src/assets/taskmanager.png';
 
 const MyProjects = [
+  
+  {
+    name: 'TaskManager',
+    experience: {
+      company: 'Freelance',
+      role: 'Front End Dev',
+      year: 2023,
+    },
+    description: "Task Manager is an app that allows one to add and manage their tasks",
+    featuredImage: taskManager,
+    technologies: [
+      'Nextjs', 'Tailwind CSS', 'Supabase',
+    ],
+    liveDemo: 'https://task-manager-app-eight.vercel.app/',
+    sourceCode: 'https://github.com/rosemutai/task-manager'
+  },
 
   {
     name: 'kioskCompass',
